@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="at.davidmihola.experiment.MainActivity$PlaceholderFragment">
+
+    <TextView
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/startExperimentButton"
+        android:text="Start experiment!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.github.davidmihola.experiment.view.FixedGridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#00ff00"
+        android:layout_alignParentBottom="true"
+        app:aspectRatio="16:9" >
+
+    </com.github.davidmihola.experiment.view.FixedGridLayout>
+
+
+</RelativeLayout>
